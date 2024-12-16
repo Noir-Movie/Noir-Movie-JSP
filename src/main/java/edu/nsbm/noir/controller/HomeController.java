@@ -16,14 +16,16 @@ import java.util.List;
 @Controller
 @RequiredArgsConstructor
 public class HomeController {
-    final CoustomerService customerService;
-    final MovieService movieService;
 
     @GetMapping("/home")
     public String home(Model model) {
-        model.addAttribute("message", "Hello, JSP with Spring Boot!");
-        return "";
+//        model.addAttribute("message", "Hello, JSP with Spring Boot!");
+        return "home";
     }
 
-
+    @GetMapping("/about")
+    public String about(Model model) {
+//        model.addAttribute("message", "Hello, JSP with Spring Boot!");
+        return "aboutus";
+    }
 }

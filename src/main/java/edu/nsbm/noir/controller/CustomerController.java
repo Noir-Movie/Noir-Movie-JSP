@@ -25,7 +25,7 @@ public class CustomerController {
         // Save the customer to the database using the service
         customerService.addCustomer(customer);
         model.addAttribute("message", "Customer registered successfully!");
-        return "customer-registration-success"; // This points to customer-registration-success.jsp
+        return "paymentsuccess"; // This points to customer-registration-success.jsp
     }
 
 }
